@@ -23,7 +23,7 @@ const songs = [
     name: 'song2',
     image: 'img2',
     displayName: 'Changes (Léon - Tired of Talking Remix)',
-    artist: 'Skizzy Mars',
+    artist: 'Skizzy Mars Junior',
   },
   {
     name: 'song3',
