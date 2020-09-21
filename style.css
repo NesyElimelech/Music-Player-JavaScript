@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #202020;
+  background-image: linear-gradient(to right, #242525bb, #49494950),
+    url('https://images.unsplash.com/photo-1487215078519-e21cc028cb29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: 'Spartan', sans-serif;
+  color: #fff;
+}
+
+.player-container {
+  height: 55rem;
+  width: 40rem;
+  border-radius: 46px;
+  background: #292828;
+  box-shadow: 6px 8px 15px #616161a2, -6px -2px 20px #1f1f1fa2;
+}
+
+.img-container {
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+  top: -5rem;
+  left: 5rem;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 6px 10px 25px #181818;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0.5rem 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 4rem 2rem;
+  height: 0.4rem;
+  width: 90%;
+}
+
+.progress {
+  background: #249176;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  margin-top: -2rem;
+  margin-left: 1rem;
+  width: 95%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #2c2c2c;
+  box-shadow: inset 4px 4px 2px #1a1a1a, inset -4px -4px 2px #313131;
+}
+
+.fas {
+  font-size: 3rem;
+  margin: 1rem;
+  color: #82cab2;
+  cursor: pointer;
+  user-select: none;
+}
+.fas:hover {
+  color: #52756c;
+}
+.fas:active {
+  transform: scale(0.9);
+}
+
+.main-button {
+  font-size: 3.2rem;
+  position: relative;
+  top: 0;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 415px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  .img-container {
+    left: 3.9rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .player-controls {
+    top: -1rem;
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 90vw;
+  }
+
+  .img-container {
+    left: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .player-controls {
+    top: -1rem;
+    left: 10rem;
+  }
+}
